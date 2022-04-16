@@ -15,7 +15,7 @@ businessReport(template = "Focus", resetStyleFiles = FALSE, ...)
 \item{...}{further arguments passed to \code{\link[rmarkdown]{pdf_document}}}
 }
 \description{
-This function can be used to render the INWTlab business report. The design
+This function can be used to render the Focus Bioinformatics report. The design
 and layout is loosly oriented at MS Word defaults.
 }
 \details{
