@@ -1,0 +1,4 @@
+name: Focus Bioinformatics Report (pdf)
+description: >
+  Template for creating Focus Bioinformatics reports in RMarkdown loosly oriented at MS Word defaults.
+create_dir: true
