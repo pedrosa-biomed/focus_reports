@@ -15,6 +15,7 @@ output:
     keep_tex: TRUE
     latex_engine: xelatex
     resetStyleFiles: FALSE
+    extra_dependencies: ["float"]
 header-includes: 
   - \newcommand{\logo}{`r gsub("_", "\\_", params$logo)`}
   - \newcommand{\cover}{`r gsub("_", "\\_", params$cover)`}
@@ -32,7 +33,7 @@ library(knitr)
 library(xtable)
 
 # settings
-knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+knitr::opts_chunk$set(fig.pos = "H", out.extra = "", echo = FALSE, message = FALSE, warning = FALSE)
 ```
 
 \maketitle
