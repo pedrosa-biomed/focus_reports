@@ -6,7 +6,7 @@ params:
   logo: logo.png
   cover: cover.png
   iblue: 41567D
-  igray: a8cf45
+  igray: CEED80
 documentclass: article
 fontsize: 14
 papersize: a4
@@ -24,6 +24,8 @@ header-includes:
 include-before:
   - \renewcommand{\contentsname}{Conteúdo}
   - \renewcommand{\pagename}{Página}
+  - \renewcommand{\tablename}{Tabela}
+  - \renewcommand{\figurename}{Figura}
 ---
 
 ```{r setup, include = FALSE}
@@ -54,7 +56,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 Um exemplo de tabela para compor o relatório:
 
 ```{r results = "asis"}
-tab <- xtable(head(iris, n = 20), align = "|C|C|C|C|C|C|")
+tab <- xtable(head(iris, n = 20), align = "|C|C|C|C|C|C|", caption = "Exemplo de legenda de tabela.")
 
 addtorow <- list()
 addtorow$pos <- list()
@@ -74,6 +76,6 @@ print(tab,
 Um exemplo de imagem para compor o relatório:
   
   
-```{r teste, fig.cap="Detecção de adaptadores", out.width = "\\textwidth"}
+```{r teste, fig.cap="Exemplo de legenda de figura.", out.width = "\\textwidth"}
 knitr::include_graphics('Figura_exemplo.png')
 ```
